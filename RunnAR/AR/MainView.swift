@@ -11,6 +11,7 @@ import RealityKit
 struct MainView : View {
     @EnvironmentObject var data: DataModel
     @State var swipeDir: String = ""
+    @State var showAlert: Bool = true
     var body: some View {
         HStack() {
             ARUIView()
@@ -29,6 +30,11 @@ struct MainView : View {
                 print(swipeDir)
                 self.swipeDir = ""
             })
+        .alert("Please hold your phone horizontally for the best experience!", isPresented: $showAlert) {
+            Button("OK", role: .cancel) {
+                showAlert = false
+            }
+        }
     }
 }
 

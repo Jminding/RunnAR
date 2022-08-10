@@ -21,6 +21,7 @@ struct HowToPlay: View {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(Helpers.primaryColor)
                             .frame(width: 30, height: 30)
+                            .shadow(color: Color(#colorLiteral(red: 0.2509803922, green: 0.2941176471, blue: 0.462745098, alpha: 0.1)), radius: 11, x: 1, y: 1)
                         Image("BackButton")
                             .resizable()
                             .frame(width: 9, height: 16)
