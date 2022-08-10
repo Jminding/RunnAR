@@ -19,7 +19,6 @@ struct SignUpView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var userData: UserData
-    @EnvironmentObject var settings: SettingsStore
     
     
     var body: some View {
@@ -114,7 +113,6 @@ struct SignUpView: View {
                     
                     Button(action: {
                         Auth.auth().createUser(withEmail: self.email, password: self.password, completion: self.signUp)
-                        self.viewRouter.currentPage = "home"
                     }) {
             
                         Image("RightArrow_White").resizable()
@@ -172,8 +170,8 @@ struct SignUpView: View {
                 db.collection("users").document(result.user.uid).setData(["uid": result.user.uid, "name": name, "email": email])
                 print("Signed up...")
                 self.userData.setUser(result: result)
-                self.settings.isLoggedIn = true
-                self.viewRouter.currentPage = "home"
+                SettingsStore.isLoggedIn = true
+                self.viewRouter.currentPage = "settings"
                 
             }
         }

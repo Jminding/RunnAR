@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import FirebaseAuth
 
 struct LoginView: View {
     
@@ -19,7 +20,6 @@ struct LoginView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var userData: UserData
-    @EnvironmentObject var settings: SettingsStore
     
     
     var body: some View {
@@ -117,10 +117,7 @@ struct LoginView: View {
                           .padding(.trailing, 10)
                       
                       Button(action: {
-
                         Auth.auth().signIn(withEmail: self.email, password: self.password, completion: self.signIn)
-                        
-                        self.viewRouter.currentPage = "home"
                       }){
                           
                           Image("RightArrow_White").resizable()
@@ -148,7 +145,7 @@ struct LoginView: View {
                           .foregroundColor(Color(#colorLiteral(red: 0.6117647059, green: 0.6117647059, blue: 0.6117647059, alpha: 1)))
                       
                         Button(action: {
-                            self.viewRouter.currentPage = "signUp"
+                            self.viewRouter.currentPage = "signup"
                         }){
                           
                             Text("Create")
@@ -182,7 +179,7 @@ struct LoginView: View {
             
             if let result = result {
                 self.userData.setUser(result: result)
-                self.settings.isLoggedIn = true
+                SettingsStore.isLoggedIn = true
                 self.viewRouter.currentPage = "settings"
                 
             }

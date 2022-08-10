@@ -26,7 +26,7 @@ struct RunnARApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            MotherView().environmentObject(ViewRouter()).environmentObject(UserData()).environmentObject(SettingsStore())
+            MotherView().environmentObject(ViewRouter()).environmentObject(UserData())
         }
     }
 }

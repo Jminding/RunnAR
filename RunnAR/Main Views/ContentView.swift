@@ -18,7 +18,7 @@ struct ContentView: View {
                 .font(.custom("Inter-SemiBold", size: 80))
             Spacer()
             Button(action: {
-                self.viewRouter.currentPage = "main"
+                self.viewRouter.currentPage = "startGame"
             }) {
                 MainButton(image: "PlayButton")
             }
@@ -32,8 +32,8 @@ struct ContentView: View {
             Button(action: {
                 self.viewRouter.currentPage = "settings"
             }) {
-                MainButton(image: "Settings").environmentObject(SettingsStore())
-            }
+                MainButton(image: "Settings")
+            }.disabled(false)
             Spacer()
         }
     }

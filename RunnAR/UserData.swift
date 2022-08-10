@@ -42,4 +42,9 @@ class UserData: ObservableObject {
         
     }
     
+    func clearUser() {
+        self.userObj = nil
+        self.uid = ""
+    }
+    
 }

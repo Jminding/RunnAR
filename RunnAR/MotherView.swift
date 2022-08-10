@@ -8,11 +8,11 @@ struct MotherView: View {
             if viewRouter.currentPage == "main" {
                 ContentView()
             } else if viewRouter.currentPage == "settings" {
-                SettingsView().environmentObject(SettingsStore())
+                SettingsView()
             } else if viewRouter.currentPage == "howtoplay" {
                 HowToPlay()
             } else if viewRouter.currentPage == "startGame" {
-                
+                MainView().environmentObject(DataModel.shared)
             } else if viewRouter.currentPage == "login" {
                 LoginView()
             } else if viewRouter.currentPage == "signup" {

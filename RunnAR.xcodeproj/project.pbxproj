@@ -25,12 +25,16 @@
 		F318FA2828A1F69A002B9920 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318FA2728A1F69A002B9920 /* SignUpView.swift */; };
 		F318FA2A28A1F89A002B9920 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318FA2928A1F89A002B9920 /* UserData.swift */; };
 		F318FA2E28A1FCA1002B9920 /* StartGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318FA2D28A1FCA1002B9920 /* StartGame.swift */; };
-		F318FA3028A1FD14002B9920 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318FA2F28A1FD14002B9920 /* ARViewContainer.swift */; };
 		F36CB12028A177C5007C3431 /* RunnARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CB11F28A177C5007C3431 /* RunnARApp.swift */; };
 		F36CB12228A177C5007C3431 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CB12128A177C5007C3431 /* ContentView.swift */; };
 		F36CB12428A177C6007C3431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36CB12328A177C6007C3431 /* Assets.xcassets */; };
 		F36CB12728A177C6007C3431 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36CB12628A177C6007C3431 /* Preview Assets.xcassets */; };
-		F3F244AF28A17851007A7A4D /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F3F2449E28A17851007A7A4D /* Experience.rcproject */; };
+		F3B10DBD28A357180049EC41 /* BrandedToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B10DBC28A357180049EC41 /* BrandedToggle.swift */; };
+		F3B10DD028A369390049EC41 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B10DCB28A369390049EC41 /* DataModel.swift */; };
+		F3B10DD128A369390049EC41 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F3B10DCC28A369390049EC41 /* Experience.rcproject */; };
+		F3B10DD228A369390049EC41 /* ARUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B10DCD28A369390049EC41 /* ARUIView.swift */; };
+		F3B10DD328A369390049EC41 /* ARDisplayViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B10DCE28A369390049EC41 /* ARDisplayViewTest.swift */; };
+		F3B10DD428A369390049EC41 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B10DCF28A369390049EC41 /* MainView.swift */; };
 		F3F244B028A17851007A7A4D /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3F244A028A17851007A7A4D /* Inter-VariableFont_slnt,wght.ttf */; };
 		F3F244B128A17851007A7A4D /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3F244A228A17851007A7A4D /* Inter-Medium.ttf */; };
 		F3F244B228A17851007A7A4D /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3F244A328A17851007A7A4D /* Inter-Light.ttf */; };
@@ -43,13 +47,22 @@
 		F3F244B928A17851007A7A4D /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3F244AA28A17851007A7A4D /* Inter-SemiBold.ttf */; };
 		F3F244BA28A17851007A7A4D /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3F244AB28A17851007A7A4D /* OFL.txt */; };
 		F3F244BB28A17851007A7A4D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3F244AC28A17851007A7A4D /* README.txt */; };
-		F3F244BE28A17884007A7A4D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F244BC28A17884007A7A4D /* GameViewController.swift */; };
 		F3F244BF28A17884007A7A4D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F244BD28A17884007A7A4D /* Helpers.swift */; };
 		F3F244C328A17A60007A7A4D /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F244C128A17A60007A7A4D /* MotherView.swift */; };
 		F3F244C428A17A60007A7A4D /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F244C228A17A60007A7A4D /* ViewRouter.swift */; };
 		F3F244C828A17F6C007A7A4D /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F244C728A17F6C007A7A4D /* MainButton.swift */; };
 		F3F244CA28A180E0007A7A4D /* HowToPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F244C928A180E0007A7A4D /* HowToPlay.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F318FA5128A21761002B9920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F318FA4D28A21760002B9920 /* ARRunnAR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F318FA3A28A2175F002B9920;
+			remoteInfo = ARRunnAR;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F318FA0628A1F111002B9920 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -59,13 +72,18 @@
 		F318FA2728A1F69A002B9920 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F318FA2928A1F89A002B9920 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		F318FA2D28A1FCA1002B9920 /* StartGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGame.swift; sourceTree = "<group>"; };
-		F318FA2F28A1FD14002B9920 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		F318FA4D28A21760002B9920 /* ARRunnAR.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ARRunnAR.xcodeproj; path = ../../ARRunnAR/ARRunnAR.xcodeproj; sourceTree = "<group>"; };
 		F36CB11C28A177C5007C3431 /* RunnAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunnAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36CB11F28A177C5007C3431 /* RunnARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnARApp.swift; sourceTree = "<group>"; };
 		F36CB12128A177C5007C3431 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F36CB12328A177C6007C3431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F36CB12628A177C6007C3431 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F3F2449E28A17851007A7A4D /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = SOURCE_ROOT; };
+		F3B10DBC28A357180049EC41 /* BrandedToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandedToggle.swift; sourceTree = "<group>"; };
+		F3B10DCB28A369390049EC41 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		F3B10DCC28A369390049EC41 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		F3B10DCD28A369390049EC41 /* ARUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARUIView.swift; sourceTree = "<group>"; };
+		F3B10DCE28A369390049EC41 /* ARDisplayViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARDisplayViewTest.swift; sourceTree = "<group>"; };
+		F3B10DCF28A369390049EC41 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F3F244A028A17851007A7A4D /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
 		F3F244A228A17851007A7A4D /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		F3F244A328A17851007A7A4D /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
@@ -78,7 +96,6 @@
 		F3F244AA28A17851007A7A4D /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		F3F244AB28A17851007A7A4D /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		F3F244AC28A17851007A7A4D /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		F3F244BC28A17884007A7A4D /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F3F244BD28A17884007A7A4D /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		F3F244C128A17A60007A7A4D /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		F3F244C228A17A60007A7A4D /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
@@ -112,6 +129,7 @@
 		F318FA0928A1F121002B9920 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F318FA0A28A1F14B002B9920 /* SettingsStore.swift */,
 				F318FA0628A1F111002B9920 /* SettingsView.swift */,
 				F318FA2528A1F694002B9920 /* LoginView.swift */,
 				F318FA2728A1F69A002B9920 /* SignUpView.swift */,
@@ -124,9 +142,7 @@
 			children = (
 				F36CB12128A177C5007C3431 /* ContentView.swift */,
 				F3F244C928A180E0007A7A4D /* HowToPlay.swift */,
-				F3F244BC28A17884007A7A4D /* GameViewController.swift */,
 				F318FA2D28A1FCA1002B9920 /* StartGame.swift */,
-				F318FA2F28A1FD14002B9920 /* ARViewContainer.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -136,8 +152,17 @@
 			children = (
 				F3F244C728A17F6C007A7A4D /* MainButton.swift */,
 				F3F244BD28A17884007A7A4D /* Helpers.swift */,
+				F3B10DBC28A357180049EC41 /* BrandedToggle.swift */,
 			);
 			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		F318FA4E28A21760002B9920 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F318FA5228A21761002B9920 /* ARRunnAR.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F36CB11328A177C5007C3431 = {
@@ -159,17 +184,17 @@
 		F36CB11E28A177C5007C3431 /* RunnAR */ = {
 			isa = PBXGroup;
 			children = (
+				F318FA4D28A21760002B9920 /* ARRunnAR.xcodeproj */,
 				F318FA0C28A1F3D9002B9920 /* GoogleService-Info.plist */,
 				F3F244CB28A1821D007A7A4D /* Info.plist */,
 				F36CB11F28A177C5007C3431 /* RunnARApp.swift */,
 				F318FA2928A1F89A002B9920 /* UserData.swift */,
 				F3F244C128A17A60007A7A4D /* MotherView.swift */,
 				F3F244C228A17A60007A7A4D /* ViewRouter.swift */,
-				F318FA0A28A1F14B002B9920 /* SettingsStore.swift */,
+				F3B10DCA28A369390049EC41 /* AR */,
 				F318FA0928A1F121002B9920 /* Settings */,
 				F318FA2B28A1FC81002B9920 /* Main Views */,
 				F318FA2C28A1FC89002B9920 /* Helper Files */,
-				F3F2449E28A17851007A7A4D /* Experience.rcproject */,
 				F3F244C028A17A60007A7A4D /* Navigation Control */,
 				F3F2449F28A17851007A7A4D /* Inter */,
 				F36CB12328A177C6007C3431 /* Assets.xcassets */,
@@ -184,6 +209,18 @@
 				F36CB12628A177C6007C3431 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3B10DCA28A369390049EC41 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				F3B10DCB28A369390049EC41 /* DataModel.swift */,
+				F3B10DCC28A369390049EC41 /* Experience.rcproject */,
+				F3B10DCD28A369390049EC41 /* ARUIView.swift */,
+				F3B10DCE28A369390049EC41 /* ARDisplayViewTest.swift */,
+				F3B10DCF28A369390049EC41 /* MainView.swift */,
+			);
+			path = AR;
 			sourceTree = "<group>";
 		};
 		F3F2449F28A17851007A7A4D /* Inter */ = {
@@ -282,12 +319,28 @@
 			);
 			productRefGroup = F36CB11D28A177C5007C3431 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F318FA4E28A21760002B9920 /* Products */;
+					ProjectRef = F318FA4D28A21760002B9920 /* ARRunnAR.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F36CB11B28A177C5007C3431 /* RunnAR */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F318FA5228A21761002B9920 /* ARRunnAR.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARRunnAR.app;
+			remoteRef = F318FA5128A21761002B9920 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F36CB11A28A177C5007C3431 /* Resources */ = {
@@ -319,15 +372,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F244BE28A17884007A7A4D /* GameViewController.swift in Sources */,
-				F318FA3028A1FD14002B9920 /* ARViewContainer.swift in Sources */,
+				F3B10DBD28A357180049EC41 /* BrandedToggle.swift in Sources */,
+				F3B10DD228A369390049EC41 /* ARUIView.swift in Sources */,
 				F318FA2E28A1FCA1002B9920 /* StartGame.swift in Sources */,
 				F3F244C428A17A60007A7A4D /* ViewRouter.swift in Sources */,
 				F318FA2A28A1F89A002B9920 /* UserData.swift in Sources */,
+				F3B10DD428A369390049EC41 /* MainView.swift in Sources */,
 				F3F244C328A17A60007A7A4D /* MotherView.swift in Sources */,
+				F3B10DD028A369390049EC41 /* DataModel.swift in Sources */,
+				F3B10DD128A369390049EC41 /* Experience.rcproject in Sources */,
 				F36CB12228A177C5007C3431 /* ContentView.swift in Sources */,
 				F3F244C828A17F6C007A7A4D /* MainButton.swift in Sources */,
-				F3F244AF28A17851007A7A4D /* Experience.rcproject in Sources */,
+				F3B10DD328A369390049EC41 /* ARDisplayViewTest.swift in Sources */,
 				F318FA2628A1F694002B9920 /* LoginView.swift in Sources */,
 				F3F244BF28A17884007A7A4D /* Helpers.swift in Sources */,
 				F318FA2828A1F69A002B9920 /* SignUpView.swift in Sources */,
@@ -463,13 +519,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RunnAR/Preview Content\"";
-				DEVELOPMENT_TEAM = JZ7MCZXV8L;
+				DEVELOPMENT_TEAM = LNMPNNK2J4;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = "/AR/*";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunnAR/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,13 +552,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RunnAR/Preview Content\"";
-				DEVELOPMENT_TEAM = JZ7MCZXV8L;
+				DEVELOPMENT_TEAM = LNMPNNK2J4;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = "/AR/*";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunnAR/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

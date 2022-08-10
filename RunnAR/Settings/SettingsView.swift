@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 struct SettingsView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
-    @EnvironmentObject var settings: SettingsStore
+    @EnvironmentObject var userData: UserData
+//    @EnvironmentObject var SettingsStore: SettingsStoreStore
     
     var body: some View {
         VStack() {
@@ -36,36 +39,72 @@ struct SettingsView: View {
             NavigationView {
                 Form {
                     Section(header: Text("Notifications")) {
-                        Toggle(isOn: $settings.isNotificationEnabled) {
+                        HStack() {
                             Text("Notifications: ")
-                        }.environmentObject(SettingsStore())
-                    }
-                    if !settings.isLoggedIn {
-                        Button(action: {
-                            viewRouter.currentPage = "signup"
-                        }) {
-                            Text("Sign Up")
-                        }
-                        Button(action: {
-                            viewRouter.currentPage = "login"
-                        }) {
-                            Text("Login")
-                        }
-                    } else if settings.isLoggedIn {
-                        Button(action: {
-                            settings.signOut()
-                        }) {
-                            Text("Sign Out")
+                            Spacer()
+                            BrandedToggle(isToggled: SettingsStore.notificationsEnabled)
+//                                .onTapGesture(perform: {
+//                                    SettingsStore.notificationsEnabled.toggle()
+//                                })
+                            // TODO: FIX NOTIFS TURNING OFF AND ON BY ITSELF
                         }
                     }
-                }.environmentObject(SettingsStore())
-            }.environmentObject(SettingsStore())
+                    Section(header: Text("Account")) {
+                        if !SettingsStore.isLoggedIn {
+                            Button(action: {
+                                viewRouter.currentPage = "signup"
+                            }) {
+                                Text("Sign Up")
+                                    .foregroundColor(Helpers.primaryColor)
+                            }
+                            Button(action: {
+                                viewRouter.currentPage = "login"
+                            }) {
+                                Text("Login")
+                                    .foregroundColor(Helpers.primaryColor)
+                            }
+                        } else if SettingsStore.isLoggedIn {
+                            Button(action: {
+                                self.signOut()
+                            }) {
+                                Text("Sign Out")
+                                    .foregroundColor(Helpers.primaryColor)
+                            }.environmentObject(self.userData)
+                        }
+                    }
+                    Section(header: Text("Data")) {
+                        Button(action: {
+//                            SettingsStore.updateSettings()
+                        }) {
+                            Text("Save Your Data to Cloud")
+                                .foregroundColor(Helpers.primaryColor)
+                        }.disabled(true)
+                        Button(action: {
+//                            SettingsStore.updateSettings()
+                        }) {
+                            Text("Load Your Data From Cloud")
+                                .foregroundColor(Helpers.primaryColor)
+                        }.disabled(true)
+                    }.opacity(0.3)
+                }
+            }
+        }
+    }
+    
+    func signOut() {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            SettingsStore.isLoggedIn = false
+            userData.clearUser()
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
         }
     }
 }
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView().environmentObject(SettingsStore())
+        SettingsView()
     }
 }
